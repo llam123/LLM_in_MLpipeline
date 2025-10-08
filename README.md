@@ -1,7 +1,7 @@
 # LLM-in-ML-workflow
 This project shows how we accelerated Fall-Risk Modeling through Integration of Computer Vision and Large Language Models
 
-									BRIDGING COMPUTER VISION AND LLMS FOR REAL-WORLD HEALTHCARE RISK PREDICTION
+						BRIDGING COMPUTER VISION AND LLMS FOR REAL-WORLD HEALTHCARE RISK PREDICTION
 									
 1.	Problem Statement
    
