@@ -14,7 +14,7 @@ address_list = df['FULL_ADDRESS'].tolist()
 
 # perplexity access to check number of stories
 
-YOUR_API_KEY = "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"
+YOUR_API_KEY = "pplx-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 
 
 output_long_redfin = []
