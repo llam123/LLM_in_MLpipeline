@@ -32,16 +32,32 @@ for address in address_list:
         {
             "role": "system",
             "content": (
+                ## identity
                 "You are an artificial intelligence assistant. \
-                You search Redfin, Trulia, Realtor.com and Google Street View to answer the question."
+                 You are provided an address. \
+                For the house at this address, your goal is to find how many stories or floors that the house has. \
+
+                ## context
+                Below is the address of the house. Use this address. \
+
+                ## task instruction
+                Your job is to search via Redfin, Trulia, Realtor.com and Google Street View and aswer the question."
             ),
         },
         {
             "role": "user",
             "content": (
-                f"You search Redfin to answer the question. \
+                ## identity
+                "You are an artificial intelligence assistant. You are provided an address. For the house at this address, your goal is to find how many stories or floors that the house has.. \
+                
+                ## context
                 The building address is '{address}'. \
-                How many stories does this building have?"
+                
+                ## task instructions 
+                Your job is to search via Redfin, Trulia, Realtor.com and Google Street View. For each address, return the number of stories or floors that the house at this address has. Output ```NA``` if you are not able to find an answer. \
+
+                ## output instructions
+                Make sure your final response is a single integer number for the number of stories or floors, such as ```2``` or ```3`  "
             ),
         },
     ]
